@@ -3,6 +3,7 @@ PATH
   specs:
     ui (0.0.1)
       rails (~> 4.0.0.rc1)
+      simple-navigation
 
 GEM
   remote: https://rubygems.org/
@@ -80,6 +81,8 @@ GEM
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
+    simple-navigation (3.10.1)
+      activesupport (>= 2.3.2)
     sprockets (2.9.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
