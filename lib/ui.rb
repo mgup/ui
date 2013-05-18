@@ -1,5 +1,5 @@
 require 'ui/version'
-require 'ui/engine'
+require 'ui/rails/engine'
 
 module Ui
 end
