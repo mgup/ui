@@ -1,6 +1,6 @@
 module Ui
   class Engine < ::Rails::Engine
-    initializer 'ui.load_ui_assets' do |app|
+    initializer 'ui.load_static_assets' do |app|
       app.middleware.use ::ActionDispatch::Static, "#{root}/vendor"
     end
   end
