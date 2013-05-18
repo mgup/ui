@@ -1,4 +1,4 @@
-class Ui::SidebarRenderer < SimpleNavigation::Renderer::List
+class SidebarRenderer < SimpleNavigation::Renderer::List
   def tag_for(item)
     if suppress_link?(item)
       content_tag 'span', item.name, link_options_for(item).except(:method)
