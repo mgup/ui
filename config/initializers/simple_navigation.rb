@@ -1,1 +1,1 @@
-SimpleNavigation.register_renderer sidebar: Ui::SidebarRenderer
+#SimpleNavigation.register_renderer sidebar: Ui::SidebarRenderer
