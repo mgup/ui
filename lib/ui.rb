@@ -4,6 +4,6 @@ require 'ui/rails/engine'
 module Ui
 end
 
-require 'ui/sidebar_renderer'
 require 'simple-navigation'
+require 'ui/sidebar_renderer'
 SimpleNavigation.register_renderer sidebar: SidebarRenderer
