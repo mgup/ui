@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = 'Элементы интерфейса проектов МГУП'
   s.description = 'Библиотека общих элементов интерфейса веб-приложений МГУП им. Ивана Фёдорова.'
 
-  s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
+  s.files = Dir['{app,config,db,lib,vendor}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
   s.test_files = Dir['test/**/*']
 
   s.add_dependency 'rails', '~> 4.0.0.rc1'
