@@ -13,7 +13,10 @@
  *= require ./bootstrap
  *= require ./bootstrap-overrides
  *
+ *= require ./elements
  *= require ./icons
  *
  *= require ./layout
+ *
+ *= require ./auth/login
  */
