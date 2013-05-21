@@ -10,5 +10,10 @@
  *
  *= require_self
  *
- *= require ui/ui
+ *= require ./bootstrap
+ *= require ./bootstrap-overrides
+ *
+ *= require ./icons
+ *
+ *= require ./layout
  */
