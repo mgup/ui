@@ -14,7 +14,8 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib,vendor}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
   s.test_files = Dir['test/**/*']
 
-  s.add_dependency 'rails', '~> 4.0.0.rc1'
+  s.add_dependency 'rails', '4.0.0.rc1'
+  s.add_dependency 'sass-rails', '4.0.0.rc1'
   s.add_dependency 'simple-navigation'
 
   s.add_development_dependency 'sqlite3'
