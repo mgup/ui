@@ -1,7 +1,31 @@
 /* ui/bootstrap-overrides.css.scss */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,300,600&subset=latin,cyrillic);
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+}
+
+.alert [class^="glyphicon-"], .alert [class*=" glyphicon-"] {
+  font-size: 27px;
+  position: relative;
+  top: 4px;
+  margin-bottom: 8px;
+  margin-right: 17px;
+  display: inline-block;
+  color: #f1c359;
+}
+.alert-success [class^="glyphicon-"],
+.alert-success [class*=" glyphicon-"] {
+  color: #81ad53;
+}
+.alert-info [class^="glyphicon-"],
+.alert-info [class*=" glyphicon-"] {
+  color: #4993c6;
+}
+.alert-danger [class^="glyphicon-"],
+.alert-danger [class*=" glyphicon-"] {
+  color: #d5393e;
 }
 
 .navbar-inverse {
