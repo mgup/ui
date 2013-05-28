@@ -48,6 +48,24 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: normal;
     }
   }
+
+  .nav > li > a {
+    padding: 13px 15px 8px;
+    border-left: 1px solid #101417;
+    color: rgb(214, 214, 214);
+    transition: background .1s linear;
+    -moz-transition: background .1s linear;
+    -webkit-transition: background .1s linear;
+    -o-transition: background .1s linear;
+
+    &:hover {
+      background-color: rgba(25, 31, 36, 0.6);
+    }
+  }
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background: rgb(60, 91, 121) !important;
 }
 
 .table {
