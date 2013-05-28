@@ -54,7 +54,7 @@ class HorizontalFormBuilder < ActionView::Helpers::FormBuilder
   # button.
   #
   def submit(value = nil, options = {})
-    options[:class] ||= 'btn btn-primary'
+    options[:class] ||= 'btn-glow primary'
 
     super value, options
   end
