@@ -1,5 +1,4 @@
-module Ui
-  class HorizontalFormBuilder < ActionView::Helpers::FormBuilder
+  class HorizontalFormBuilder << ActionView::Helpers::FormBuilder
     attr_reader :template
     attr_reader :object
     attr_reader :object_name
@@ -22,7 +21,7 @@ module Ui
     # Wraps the contents of the block passed in a fieldset with optional
     # +legend+ text.
     #
-    def xinputs(legend = nil, options = {}, &block)
+    def inputs(legend = nil, options = {}, &block)
       template.content_tag(:fieldset, options) do
         template.concat template.content_tag(:legend, legend) unless legend.nil?
         block.call
@@ -192,4 +191,3 @@ module Ui
       end.to_s
     end
   end
-end
