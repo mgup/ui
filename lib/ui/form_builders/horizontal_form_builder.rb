@@ -22,7 +22,7 @@ module Ui
     # Wraps the contents of the block passed in a fieldset with optional
     # +legend+ text.
     #
-    def inputs(legend = nil, options = {}, &block)
+    def xinputs(legend = nil, options = {}, &block)
       template.content_tag(:fieldset, options) do
         template.concat template.content_tag(:legend, legend) unless legend.nil?
         block.call
