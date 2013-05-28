@@ -76,8 +76,8 @@ h1, h2, h3, h4, h5 {
     }
 
     a {
-      span {
-        margin-left: 35px;
+      span:not([class~="glyphicon"]) {
+        margin-left: 30px;
         line-height: 20px;
         transition: color .1s linear;
         -webkit-transition: color .1s linear;
@@ -85,11 +85,10 @@ h1, h2, h3, h4, h5 {
         -o-transition: color .1s linear;
       }
 
-      i {
+      span[class~="glyphicon"] {
+        font-size: 1.5em;
         position: absolute;
         left: 0;
-        height: 24px;
-        width: 24px;
         opacity: 0.5;
         transition: opacity .1s ease;
         -webkit-transition: opacity .1s ease;

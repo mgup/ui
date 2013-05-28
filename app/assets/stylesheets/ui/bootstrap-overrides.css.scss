@@ -68,6 +68,10 @@ h1, h2, h3, h4, h5, h6 {
   background: rgb(60, 91, 121) !important;
 }
 
+.control-label:first-letter {
+  text-transform: uppercase;
+}
+
 .table {
   thead {
     border-top: 1px solid #dee3ea;
