@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     ui (0.0.1)
-      jquery-turbolinks
       rails (= 4.0.0.rc1)
       sass-rails (= 4.0.0.rc1)
       simple-navigation
@@ -43,13 +42,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    coffee-rails (4.0.0)
-      coffee-script (>= 2.2.0)
-      railties (>= 4.0.0.beta, < 5.0)
-    coffee-script (2.2.0)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.6.2)
     colorize (0.5.8)
     coveralls (0.6.7)
       colorize
@@ -59,13 +51,8 @@ GEM
       thor
     diff-lcs (1.2.4)
     erubis (2.7.0)
-    execjs (1.4.0)
-      multi_json (~> 1.0)
     hike (1.2.2)
     i18n (0.6.4)
-    jquery-turbolinks (1.0.0)
-      railties (>= 3.1.0)
-      turbolinks
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -133,8 +120,6 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (1.1.1)
-      coffee-rails
     tzinfo (0.3.37)
     xpath (2.0.0)
       nokogiri (~> 1.3)
