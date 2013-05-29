@@ -1,4 +1,4 @@
-  class HorizontalFormBuilder << ActionView::Helpers::FormBuilder
+  class HorizontalFormBuilder < ActionView::Helpers::FormBuilder
     attr_reader :template
     attr_reader :object
     attr_reader :object_name
