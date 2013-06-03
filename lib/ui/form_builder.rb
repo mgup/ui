@@ -1,7 +1,7 @@
 require 'ui'
 require 'action_view/helpers'
 
-class Ui::HorizontalFormBuilder < ActionView::Helpers::FormBuilder
+class Ui::FormBuilder < ActionView::Helpers::FormBuilder
   include Ui::FormHelpers
 
   attr_reader :template
