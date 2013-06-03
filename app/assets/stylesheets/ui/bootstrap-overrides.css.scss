@@ -73,6 +73,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .table {
+  margin-top: 34px;
+
   thead {
     border-top: 1px solid #dee3ea;
     th {
@@ -80,9 +82,10 @@ h1, h2, h3, h4, h5, h6 {
       position: relative;
       text-transform: uppercase;
       font-size: 11px;
+      vertical-align: top !important;
     }
   }
-  tr.first {
+  tr:first-child {
     td {
       border-top: none;
     }
