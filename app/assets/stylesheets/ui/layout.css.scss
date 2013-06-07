@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5 {
     padding-right: 15px;
     padding-left: 15px;
     margin-bottom: 0;
-    margin-left: 25px;
+    margin-left: 20px;
 
     > li > a {
       display: block;
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5 {
           text-shadow: 1px 1px 1px #fff;
         }
 
-        i {
+        span[class~="glyphicon"] {
           opacity: 1;
         }
       }
@@ -166,5 +166,23 @@ h1, h2, h3, h4, h5 {
   .wide-content {
     margin-left: 0;
     border-radius: 0;
+  }
+}
+
+@media (max-width: 1020px) {
+  .content {
+    margin-left: 65px;
+  }
+  #sidebar-nav {
+    #dashboard-menu {
+      margin-left: 5px;
+
+      .pointer {
+        display: none;
+      }
+      li a span:not([class~="glyphicon"]) {
+        visibility: hidden;
+      }
+    }
   }
 }
