@@ -17,3 +17,4 @@
 //= require ./highcharts-more
 //
 //= require ./chosen.jquery
+//= require ./forms
