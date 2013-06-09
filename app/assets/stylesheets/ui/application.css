@@ -12,6 +12,7 @@
  *
  *= require ./bootstrap
  *= require ./bootstrap-overrides
+ *= require ./chosen
  *
  *= require ./elements
  *= require ./icons
