@@ -3,8 +3,8 @@ require 'ui/rails/engine'
 require 'action_view'
 
 module Ui
-  autoload :FormBuilder, 'ui/form_builder'
-  autoload :FormHelpers, 'ui/form_helpers'
+  #autoload :FormBuilder, 'ui/form_builder'
+  #autoload :FormHelpers, 'ui/form_helpers'
   autoload :Railtie,     'ui/railtie'
   autoload :VERSION,     'ui/version'
 end
