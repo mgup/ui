@@ -84,8 +84,8 @@ class Ui::FormBuilder < ActionView::Helpers::FormBuilder
   INPUTS.each do |input|
     define_method input do |attribute, *args, &block|
       options  = args.extract_options!
-      #raise args.inspect
-      label    = args.shift
+      #label    = args.first.nil? ? '' : args.shift
+      label = args.shift
       classes  = %w(col col-lg-10)
       classes << ('input-' + options.delete(:add_on).to_s) if options[:add_on]
 
