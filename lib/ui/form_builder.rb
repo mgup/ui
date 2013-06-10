@@ -48,7 +48,7 @@ class Ui::FormBuilder < ActionView::Helpers::FormBuilder
   # Wraps action buttons into their own styled container.
   #
   def actions(&block)
-    template.content_tag(:div, class: 'form-actions', &block)
+    template.content_tag(:div, class: 'col col-lg-10 col-offset-2', &block)
   end
 
   #
@@ -56,7 +56,7 @@ class Ui::FormBuilder < ActionView::Helpers::FormBuilder
   # button.
   #
   def submit(value = nil, options = {})
-    options[:class] ||= 'btn-glow primary'
+    options[:class] ||= 'btn btn-primary'
 
     super value, options
   end
@@ -84,12 +84,13 @@ class Ui::FormBuilder < ActionView::Helpers::FormBuilder
   INPUTS.each do |input|
     define_method input do |attribute, *args, &block|
       options  = args.extract_options!
-      label    = args.first.nil? ? '' : args.shift
-      classes  = %w(controls input)
+      #raise args.inspect
+      label    = args.shift
+      classes  = %w(col col-lg-10)
       classes << ('input-' + options.delete(:add_on).to_s) if options[:add_on]
 
-      self.div_wrapper(attribute, class: 'control-group') do
-        template.concat self.label(attribute, label, class: 'control-label') if label
+      self.div_wrapper(attribute, class: 'row') do
+        template.concat self.label(attribute, label, class: 'col col-lg-2 control-label') if label
         template.concat template.content_tag(:div, class: classes.join(' ')) {
           block.call if block.present? and classes.include?('input-prepend')
           template.concat super(attribute, *(args << options))
